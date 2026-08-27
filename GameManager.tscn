@@ -1,0 +1,176 @@
+[gd_scene format=3 uid="uid://cxx13j8enqbby"]
+
+[ext_resource type="Script" uid="uid://cpa7b41nky0ir" path="res://GameManager.cs" id="1_dxunw"]
+[ext_resource type="PackedScene" uid="uid://cjxsnh8xo74g3" path="res://AnswerZone.tscn" id="2_pdxvr"]
+[ext_resource type="PackedScene" uid="uid://dywsssd1cttfh" path="res://Player.tscn" id="4_k24m2"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_86ap7"]
+b = Vector2(0, 173)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_475nj"]
+distance = 15.0
+
+[node name="Node2D" type="Node2D" unique_id=292487152 node_paths=PackedStringArray("Zones", "LocalPlayer", "QuestionLabel", "TimerLabel", "RoundTimer", "BarreiraSeccao1", "BarreiraSeccao2", "GameOverPanel", "GameOverLabel", "BtnReturnMenu", "BtnTopMenu")]
+script = ExtResource("1_dxunw")
+Zones = [NodePath("GridContainer/Control"), NodePath("GridContainer/Control2"), NodePath("GridContainer/Control3"), NodePath("GridContainer/Control4")]
+LocalPlayer = NodePath("CharacterBody2D")
+QuestionLabel = NodePath("UI/Control/QuestionLabel")
+TimerLabel = NodePath("UI/Control/TimerLabel")
+RoundTimer = NodePath("RoundTimer")
+BarreiraSeccao1 = NodePath("BordaSeccao/CollisionShape2D")
+BarreiraSeccao2 = NodePath("BordaSeccao/CollisionShape2D2")
+GameOverPanel = NodePath("CanvasLayer/GameOverPanel")
+GameOverLabel = NodePath("CanvasLayer/GameOverPanel/VBoxContainer/GameOverLabel")
+BtnReturnMenu = NodePath("CanvasLayer/GameOverPanel/VBoxContainer/BtnReturnMenu")
+BtnTopMenu = NodePath("CanvasLayer/TopMenuButton")
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="." unique_id=1651143374]
+spawn_path = NodePath("../Arena/SpawnPoints")
+
+[node name="RoundTimer" type="Timer" parent="." unique_id=1479827942]
+
+[node name="Arena" type="Node2D" parent="." unique_id=1148185562]
+
+[node name="ZonesContainer" type="Node2D" parent="Arena" unique_id=1671734041]
+position = Vector2(598, 370)
+
+[node name="SpawnPoints" type="Node2D" parent="Arena" unique_id=1724019651]
+position = Vector2(598, 260)
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=718945277]
+
+[node name="Control" type="Control" parent="UI" unique_id=1945949611]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="UI/Control" unique_id=825606339]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 2.0
+offset_right = 884.0
+offset_bottom = 152.0
+
+[node name="QuestionLabel" type="Label" parent="UI/Control" unique_id=402021934]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 68.0
+offset_right = 883.0
+offset_bottom = 91.0
+text = "QUESTAO"
+horizontal_alignment = 1
+
+[node name="TimerLabel" type="Label" parent="UI/Control" unique_id=101027873]
+layout_mode = 0
+offset_left = 303.0
+offset_top = 10.0
+offset_right = 343.0
+offset_bottom = 33.0
+text = "TIMER"
+
+[node name="PlayerCountLabel" type="Label" parent="UI/Control" unique_id=1228203630]
+visible = false
+layout_mode = 0
+offset_left = 753.0
+offset_top = 16.0
+offset_right = 872.0
+offset_bottom = 39.0
+text = "PLAYER COUNT"
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=175934138]
+propagate_maximum_size = false
+offset_left = 46.0
+offset_top = 158.0
+offset_right = 1122.0
+offset_bottom = 651.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 2
+
+[node name="Control" parent="GridContainer" unique_id=2109855090 instance=ExtResource("2_pdxvr")]
+layout_mode = 2
+
+[node name="Control2" parent="GridContainer" unique_id=1049603334 instance=ExtResource("2_pdxvr")]
+layout_mode = 2
+
+[node name="Control3" parent="GridContainer" unique_id=261185797 instance=ExtResource("2_pdxvr")]
+layout_mode = 2
+
+[node name="Control4" parent="GridContainer" unique_id=125978817 instance=ExtResource("2_pdxvr")]
+layout_mode = 2
+
+[node name="CharacterBody2D" parent="." unique_id=416330072 instance=ExtResource("4_k24m2")]
+position = Vector2(551, 368)
+
+[node name="BordaSeccao" type="StaticBody2D" parent="." unique_id=810343305]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BordaSeccao" unique_id=642943026]
+position = Vector2(582, 40)
+scale = Vector2(1, 4)
+shape = SubResource("SegmentShape2D_86ap7")
+disabled = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="BordaSeccao" unique_id=1796388836]
+position = Vector2(1186, 400)
+rotation = 1.5707964
+scale = Vector2(1, 7)
+shape = SubResource("SegmentShape2D_86ap7")
+disabled = true
+
+[node name="BordaMapa" type="StaticBody2D" parent="." unique_id=1961579783]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BordaMapa" unique_id=867332699]
+position = Vector2(580, 655)
+shape = SubResource("WorldBoundaryShape2D_475nj")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="BordaMapa" unique_id=159021548]
+position = Vector2(581, 143)
+rotation = 3.1415927
+shape = SubResource("WorldBoundaryShape2D_475nj")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="BordaMapa" unique_id=1706487312]
+position = Vector2(30, 326)
+rotation = 1.5707964
+shape = SubResource("WorldBoundaryShape2D_475nj")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="BordaMapa" unique_id=207151330]
+position = Vector2(1139, 365)
+rotation = 4.712389
+shape = SubResource("WorldBoundaryShape2D_475nj")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=482135577]
+
+[node name="GameOverPanel" type="Control" parent="CanvasLayer" unique_id=229488784]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/GameOverPanel" unique_id=217905936]
+layout_mode = 0
+offset_right = 1156.0
+offset_bottom = 652.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/GameOverPanel" unique_id=850831174]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 646.0
+alignment = 1
+
+[node name="GameOverLabel" type="Label" parent="CanvasLayer/GameOverPanel/VBoxContainer" unique_id=626742279]
+layout_mode = 2
+text = "Jogo pausado"
+horizontal_alignment = 1
+
+[node name="BtnReturnMenu" type="Button" parent="CanvasLayer/GameOverPanel/VBoxContainer" unique_id=1662171675]
+layout_mode = 2
+text = "Retornar ao Menu Principal"
+
+[node name="TopMenuButton" type="Button" parent="CanvasLayer" unique_id=1640082674]
+offset_right = 80.0
+offset_bottom = 31.0
+text = "Menu"

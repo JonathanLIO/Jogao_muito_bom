@@ -1,0 +1,152 @@
+[gd_scene format=3 uid="uid://1gbecxf8oqcw"]
+
+[ext_resource type="Script" uid="uid://c2kx7vyxe70ym" path="res://MainMenu.cs" id="1_06t4h"]
+
+[node name="MainMenu" type="Control" unique_id=669608869 node_paths=PackedStringArray("CheckSyllables", "CheckConsonants", "CheckVowels", "CheckAddition", "CheckSubtraction", "CheckMultiplication", "CheckDivision", "BtnCreateQuestion", "BtnImportQuestion", "BtnPlaySolo", "BtnCreateRoom", "BtnJoinRoom", "CustomFilesContainer", "labelImport", "labelErro", "ImportFileDialog")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+CheckSyllables = NodePath("MainLayout/ContentContainer/QuizSelection/PortuguesSection/CheckSyllables")
+CheckConsonants = NodePath("MainLayout/ContentContainer/QuizSelection/PortuguesSection/CheckConsonants")
+CheckVowels = NodePath("MainLayout/ContentContainer/QuizSelection/PortuguesSection/CheckVowels")
+CheckAddition = NodePath("MainLayout/ContentContainer/QuizSelection/MatematicaSection/CheckAddition")
+CheckSubtraction = NodePath("MainLayout/ContentContainer/QuizSelection/MatematicaSection/CheckSubtraction")
+CheckMultiplication = NodePath("MainLayout/ContentContainer/QuizSelection/MatematicaSection/CheckMultiplication")
+CheckDivision = NodePath("MainLayout/ContentContainer/QuizSelection/MatematicaSection/CheckDivision")
+BtnCreateQuestion = NodePath("MainLayout/ContentContainer/QuizSelection/CustomSection/BtnCreateQuestion")
+BtnImportQuestion = NodePath("MainLayout/ContentContainer/QuizSelection/CustomSection/BtnImportQuestion")
+BtnPlaySolo = NodePath("MainLayout/ContentContainer/NetworkSection/BtnPlaySolo")
+BtnCreateRoom = NodePath("MainLayout/ContentContainer/NetworkSection/BtnCreateRoom")
+BtnJoinRoom = NodePath("MainLayout/ContentContainer/NetworkSection/BtnJoinRoom")
+CustomFilesContainer = NodePath("MainLayout/ContentContainer/QuizSelection/CustomSection/CustomFilesContainer")
+labelImport = NodePath("MainLayout/ContentContainer/QuizSelection/CustomSection/rtnImportLabel")
+labelErro = NodePath("MainLayout/ContentContainer/NetworkSection/msgLabel")
+ImportFileDialog = NodePath("FileDialog")
+
+[node name="Background" type="ColorRect" parent="." unique_id=991342407]
+layout_mode = 0
+offset_left = -13.0
+offset_top = -8.0
+offset_right = 1161.0
+offset_bottom = 655.0
+color = Color(0.5489626, 0.5489626, 0.54896253, 1)
+
+[node name="MainLayout" type="VBoxContainer" parent="." unique_id=1181224986]
+layout_mode = 0
+offset_top = 34.0
+offset_right = 1153.0
+offset_bottom = 649.0
+
+[node name="Title" type="Label" parent="MainLayout" unique_id=1570746899]
+layout_mode = 2
+theme_override_font_sizes/font_size = 31
+text = "Menu do Quiz"
+horizontal_alignment = 1
+
+[node name="ContentContainer" type="HBoxContainer" parent="MainLayout" unique_id=313843523]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="QuizSelection" type="VBoxContainer" parent="MainLayout/ContentContainer" unique_id=18096801]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PortuguesSection" type="VBoxContainer" parent="MainLayout/ContentContainer/QuizSelection" unique_id=909890962]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MainLayout/ContentContainer/QuizSelection/PortuguesSection" unique_id=1019957106]
+layout_mode = 2
+text = "Português"
+
+[node name="CheckSyllables" type="CheckBox" parent="MainLayout/ContentContainer/QuizSelection/PortuguesSection" unique_id=704900552]
+layout_mode = 2
+text = "Quantidade de Sílabas"
+
+[node name="CheckVowels" type="CheckBox" parent="MainLayout/ContentContainer/QuizSelection/PortuguesSection" unique_id=1412860619]
+layout_mode = 2
+text = "Quantidade de Vogal"
+
+[node name="CheckConsonants" type="CheckBox" parent="MainLayout/ContentContainer/QuizSelection/PortuguesSection" unique_id=1977092890]
+layout_mode = 2
+text = "Quantidade de Consoante"
+
+[node name="MatematicaSection" type="VBoxContainer" parent="MainLayout/ContentContainer/QuizSelection" unique_id=1058233374]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MainLayout/ContentContainer/QuizSelection/MatematicaSection" unique_id=2143199088]
+layout_mode = 2
+text = "Matemática"
+
+[node name="CheckAddition" type="CheckBox" parent="MainLayout/ContentContainer/QuizSelection/MatematicaSection" unique_id=1014573224]
+layout_mode = 2
+text = "Soma"
+
+[node name="CheckSubtraction" type="CheckBox" parent="MainLayout/ContentContainer/QuizSelection/MatematicaSection" unique_id=1233521710]
+layout_mode = 2
+text = "Subtração"
+
+[node name="CheckMultiplication" type="CheckBox" parent="MainLayout/ContentContainer/QuizSelection/MatematicaSection" unique_id=1563579164]
+layout_mode = 2
+text = "Multiplicação"
+
+[node name="CheckDivision" type="CheckBox" parent="MainLayout/ContentContainer/QuizSelection/MatematicaSection" unique_id=1667813679]
+layout_mode = 2
+text = "Divisão"
+
+[node name="CustomSection" type="VBoxContainer" parent="MainLayout/ContentContainer/QuizSelection" unique_id=887587845]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MainLayout/ContentContainer/QuizSelection/CustomSection" unique_id=1170447070]
+layout_mode = 2
+text = "Customizado"
+
+[node name="BtnCreateQuestion" type="Button" parent="MainLayout/ContentContainer/QuizSelection/CustomSection" unique_id=1011718043]
+visible = false
+layout_mode = 2
+text = "Criar questões"
+
+[node name="BtnImportQuestion" type="Button" parent="MainLayout/ContentContainer/QuizSelection/CustomSection" unique_id=1801067725]
+layout_mode = 2
+text = "Importar questões"
+
+[node name="rtnImportLabel" type="Label" parent="MainLayout/ContentContainer/QuizSelection/CustomSection" unique_id=295005820]
+layout_mode = 2
+autowrap_mode = 3
+
+[node name="CustomFilesContainer" type="VBoxContainer" parent="MainLayout/ContentContainer/QuizSelection/CustomSection" unique_id=148650854]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="NetworkSection" type="VBoxContainer" parent="MainLayout/ContentContainer" unique_id=145650118]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MainLayout/ContentContainer/NetworkSection" unique_id=974072925]
+layout_mode = 2
+text = "Modo de Jogo"
+
+[node name="BtnPlaySolo" type="Button" parent="MainLayout/ContentContainer/NetworkSection" unique_id=642414501]
+layout_mode = 2
+text = "Jogar solo"
+
+[node name="BtnCreateRoom" type="Button" parent="MainLayout/ContentContainer/NetworkSection" unique_id=1443873313]
+layout_mode = 2
+text = "Criar sala"
+
+[node name="BtnJoinRoom" type="Button" parent="MainLayout/ContentContainer/NetworkSection" unique_id=660532615]
+layout_mode = 2
+text = "Entrar em sala"
+
+[node name="msgLabel" type="Label" parent="MainLayout/ContentContainer/NetworkSection" unique_id=1220052891]
+layout_mode = 2
+autowrap_mode = 3
+
+[node name="FileDialog" type="FileDialog" parent="." unique_id=1018568263]
+title = "Open a File"
+file_mode = 0
+access = 2
+filters = PackedStringArray("*.json", "Arquivos JSON")

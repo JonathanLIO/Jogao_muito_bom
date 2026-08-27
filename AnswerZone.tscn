@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://cjxsnh8xo74g3"]
+
+[ext_resource type="Script" uid="uid://8k2ak3pkbr2n" path="res://AnswerZone.cs" id="1_mr5xi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8imwq"]
+size = Vector2(268, 262)
+
+[node name="Control" type="Control" unique_id=2109855090 node_paths=PackedStringArray("AnswerLabel", "ColorRect", "DetectionArea")]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -131.0
+offset_top = -129.0
+offset_right = 137.0
+offset_bottom = 133.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_mr5xi")
+AnswerLabel = NodePath("Label")
+ColorRect = NodePath("ColorRect")
+DetectionArea = NodePath("Area2D")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1621765063]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=108522782]
+position = Vector2(134, 131)
+shape = SubResource("RectangleShape2D_8imwq")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1675948320]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=1043771404]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "teste"
+horizontal_alignment = 1

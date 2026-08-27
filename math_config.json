@@ -1,0 +1,30 @@
+﻿[
+  {
+    "type": "math_addition",
+    "min1": 1,
+    "max1": 100,
+    "min2": 1,
+    "max2": 10
+  },
+  {
+    "type": "math_subtraction",
+    "min1": 1,
+    "max1": 50,
+    "min2": 1,
+    "max2": 50
+  },
+  {
+    "type": "math_multiplication",
+    "min1": 1,
+    "max1": 20,
+    "min2": 1,
+    "max2": 20
+  },
+  {
+    "type": "math_division",
+    "min1": 1,
+    "max1": 10,
+    "min2": 1,
+    "max2": 10
+  }
+]

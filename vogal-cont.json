@@ -1,0 +1,142 @@
+﻿[
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Pé",
+    "resp-correta": "1",
+    "alternativas": [],
+    "nivel": 1
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Sol",
+    "resp-correta": "1",
+    "alternativas": [],
+    "nivel": 1
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Casa",
+    "resp-correta": "2",
+    "alternativas": [],
+    "nivel": 1
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Mesa",
+    "resp-correta": "2",
+    "alternativas": [],
+    "nivel": 1
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Carro",
+    "resp-correta": "2",
+    "alternativas": [],
+    "nivel": 1
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Boneca",
+    "resp-correta": "3",
+    "alternativas": [],
+    "nivel": 2
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Janela",
+    "resp-correta": "3",
+    "alternativas": [],
+    "nivel": 2
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Computador",
+    "resp-correta": "4",
+    "alternativas": [],
+    "nivel": 3
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Elefante",
+    "resp-correta": "4",
+    "alternativas": [],
+    "nivel": 3
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Borboleta",
+    "resp-correta": "4",
+    "alternativas": [],
+    "nivel": 3
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Paralelepípedo",
+    "resp-correta": "6",
+    "alternativas": [],
+    "nivel": 5
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Otorrinolaringologista",
+    "resp-correta": "10",
+    "alternativas": [],
+    "nivel": 5
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Inconstitucionalissimamente",
+    "resp-correta": "11",
+    "alternativas": [],
+    "nivel": 5
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Xícara",
+    "resp-correta": "3",
+    "alternativas": [],
+    "nivel": 2
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Caderno",
+    "resp-correta": "3",
+    "alternativas": [],
+    "nivel": 2
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Universidade",
+    "resp-correta": "6",
+    "alternativas": [],
+    "nivel": 4
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Parabéns",
+    "resp-correta": "3",
+    "alternativas": [],
+    "nivel": 3
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Abacaxi",
+    "resp-correta": "4",
+    "alternativas": [],
+    "nivel": 2
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Cinema",
+    "resp-correta": "3",
+    "alternativas": [],
+    "nivel": 2
+  },
+  {
+    "type": "spec-vogalCount",
+    "questao": "Quantas vogais tem: Microscópio",
+    "resp-correta": "5",
+    "alternativas": [],
+    "nivel": 4
+  }
+]

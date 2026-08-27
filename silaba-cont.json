@@ -1,0 +1,144 @@
+﻿[
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Pé",
+    "resp-correta": "1",
+    "alternativas": [],
+    "nivel": 1
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Sol",
+    "resp-correta": "1",
+    "alternativas": [],
+    "nivel": 1
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Casa",
+    "resp-correta": "2",
+    "alternativas": [],
+    "nivel": 1
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Mesa",
+    "resp-correta": "2",
+    "alternativas": [],
+    "nivel": 1
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Carro",
+    "resp-correta": "2",
+    "alternativas": [],
+    "nivel": 1
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Boneca",
+    "resp-correta": "3",
+    "alternativas": [],
+    "nivel": 2
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Janela",
+    "resp-correta": "3",
+    "alternativas": [],
+    "nivel": 2
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Computador",
+    "resp-correta": "4",
+    "alternativas": [],
+    "nivel": 2
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Elefante",
+    "resp-correta": "4",
+    "alternativas": [],
+    "nivel": 2
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Borboleta",
+    "resp-correta": "4",
+    "alternativas": [],
+    "nivel": 3
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Paralelepípedo",
+    "resp-correta": "7",
+    "alternativas": [],
+    "nivel": 5
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Otorrinolaringologista",
+    "resp-correta": "10",
+    "alternativas": [],
+    "nivel": 5
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Inconstitucionalissimamente",
+    "resp-correta": "11",
+    "alternativas": [],
+    "nivel": 5
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Xícara",
+    "resp-correta": "3",
+    "alternativas": [],
+    "nivel": 2
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Caderno",
+    "resp-correta": "3",
+    "alternativas": [],
+    "nivel": 2
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Universidade",
+    "resp-correta": "5",
+    "alternativas": [],
+    "nivel": 3
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Parabéns",
+    "resp-correta": "3",
+    "alternativas": [],
+    "nivel": 3
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Abacaxi",
+    "resp-correta": "4",
+    "alternativas": [],
+    "nivel": 3
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Cinema",
+    "resp-correta": "3",
+    "alternativas": [],
+    "nivel": 2
+  },
+  {
+    "type": "spec-silabaCount",
+    "questao": "Quantidade de silabas de: Microscópio",
+    "resp-correta": "5",
+    "alternativas": [],
+    "nivel": 4
+  }
+]
+
+
