@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c2kx7vyxe70ym" path="res://MainMenu.cs" id="1_06t4h"]
 
-[node name="MainMenu" type="Control" unique_id=669608869 node_paths=PackedStringArray("CheckSyllables", "CheckConsonants", "CheckVowels", "CheckAddition", "CheckSubtraction", "CheckMultiplication", "CheckDivision", "BtnCreateQuestion", "BtnImportQuestion", "BtnPlaySolo", "BtnCreateRoom", "BtnJoinRoom", "CustomFilesContainer", "labelImport", "labelErro", "ImportFileDialog")]
+[node name="MainMenu" type="Control" unique_id=669608869 node_paths=PackedStringArray("CheckSyllables", "CheckConsonants", "CheckVowels", "CheckAddition", "CheckSubtraction", "CheckMultiplication", "CheckDivision", "BtnCreateQuestion", "BtnImportQuestion", "BtnPlaySolo", "BtnCreateRoom", "BtnJoinRoom", "CustomFilesContainer", "labelImport", "IpInput", "BtnHost", "BtnJoin", "labelErro", "ImportFileDialog")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -24,6 +24,9 @@ BtnCreateRoom = NodePath("MainLayout/ContentContainer/NetworkSection/BtnCreateRo
 BtnJoinRoom = NodePath("MainLayout/ContentContainer/NetworkSection/BtnJoinRoom")
 CustomFilesContainer = NodePath("MainLayout/ContentContainer/QuizSelection/CustomSection/CustomFilesContainer")
 labelImport = NodePath("MainLayout/ContentContainer/QuizSelection/CustomSection/rtnImportLabel")
+IpInput = NodePath("MainLayout/ContentContainer/NetworkSection/ipInput")
+BtnHost = NodePath("MainLayout/ContentContainer/NetworkSection/BtnCreateRoom")
+BtnJoin = NodePath("MainLayout/ContentContainer/NetworkSection/BtnJoinRoom")
 labelErro = NodePath("MainLayout/ContentContainer/NetworkSection/msgLabel")
 ImportFileDialog = NodePath("FileDialog")
 
@@ -135,15 +138,21 @@ text = "Jogar solo"
 
 [node name="BtnCreateRoom" type="Button" parent="MainLayout/ContentContainer/NetworkSection" unique_id=1443873313]
 layout_mode = 2
+disabled = true
 text = "Criar sala"
 
 [node name="BtnJoinRoom" type="Button" parent="MainLayout/ContentContainer/NetworkSection" unique_id=660532615]
 layout_mode = 2
+disabled = true
 text = "Entrar em sala"
 
 [node name="msgLabel" type="Label" parent="MainLayout/ContentContainer/NetworkSection" unique_id=1220052891]
 layout_mode = 2
 autowrap_mode = 3
+
+[node name="ipInput" type="LineEdit" parent="MainLayout/ContentContainer/NetworkSection" unique_id=1038748833]
+visible = false
+layout_mode = 2
 
 [node name="FileDialog" type="FileDialog" parent="." unique_id=1018568263]
 title = "Open a File"
