@@ -82,7 +82,9 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="MainLayout/ContentContainer/QuizSelection/MatematicaSection" unique_id=2143199088]
 layout_mode = 2
-text = "Matemática"
+text = "
+
+Matemática"
 
 [node name="CheckAddition" type="CheckBox" parent="MainLayout/ContentContainer/QuizSelection/MatematicaSection" unique_id=1014573224]
 layout_mode = 2
@@ -130,7 +132,9 @@ size_flags_horizontal = 3
 
 [node name="Label" type="Label" parent="MainLayout/ContentContainer/NetworkSection" unique_id=974072925]
 layout_mode = 2
-text = "Modo de Jogo"
+text = "
+Modo de Jogo
+"
 
 [node name="BtnPlaySolo" type="Button" parent="MainLayout/ContentContainer/NetworkSection" unique_id=642414501]
 layout_mode = 2
