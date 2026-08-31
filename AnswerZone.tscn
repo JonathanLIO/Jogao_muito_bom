@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cjxsnh8xo74g3"]
 
 [ext_resource type="Script" uid="uid://8k2ak3pkbr2n" path="res://AnswerZone.cs" id="1_mr5xi"]
+[ext_resource type="FontFile" uid="uid://cymhq3yoj7mw0" path="res://Fonts/pixel_operator/PixelOperatorSC-Bold.ttf" id="2_avs4n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8imwq"]
 size = Vector2(268, 262)
@@ -47,6 +48,7 @@ offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 22
+theme_override_fonts/font = ExtResource("2_avs4n")
+theme_override_font_sizes/font_size = 35
 text = "teste"
 horizontal_alignment = 1

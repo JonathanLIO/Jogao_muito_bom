@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cxx13j8enqbby"]
 
 [ext_resource type="Script" uid="uid://cpa7b41nky0ir" path="res://GameManager.cs" id="1_dxunw"]
+[ext_resource type="FontFile" uid="uid://cymhq3yoj7mw0" path="res://Fonts/pixel_operator/PixelOperatorSC-Bold.ttf" id="2_108xg"]
 [ext_resource type="PackedScene" uid="uid://cjxsnh8xo74g3" path="res://AnswerZone.tscn" id="2_pdxvr"]
 [ext_resource type="PackedScene" uid="uid://dywsssd1cttfh" path="res://Player.tscn" id="4_k24m2"]
 
@@ -47,26 +48,31 @@ offset_bottom = 40.0
 
 [node name="Panel" type="Panel" parent="UI/Control" unique_id=825606339]
 layout_mode = 0
-offset_left = 283.0
-offset_top = 2.0
-offset_right = 884.0
-offset_bottom = 152.0
+offset_left = 113.0
+offset_top = 6.0
+offset_right = 1052.0
+offset_bottom = 154.0
 
 [node name="QuestionLabel" type="Label" parent="UI/Control" unique_id=402021934]
 layout_mode = 0
-offset_left = 283.0
-offset_top = 68.0
-offset_right = 883.0
-offset_bottom = 91.0
+offset_left = 118.0
+offset_top = 38.0
+offset_right = 1045.0
+offset_bottom = 154.0
+theme_override_fonts/font = ExtResource("2_108xg")
+theme_override_font_sizes/font_size = 40
 text = "QUESTAO"
 horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="TimerLabel" type="Label" parent="UI/Control" unique_id=101027873]
 layout_mode = 0
-offset_left = 303.0
-offset_top = 10.0
-offset_right = 343.0
-offset_bottom = 33.0
+offset_left = 127.0
+offset_top = 16.0
+offset_right = 178.0
+offset_bottom = 39.0
+theme_override_fonts/font = ExtResource("2_108xg")
+theme_override_font_sizes/font_size = 21
 text = "TIMER"
 
 [node name="PlayerCountLabel" type="Label" parent="UI/Control" unique_id=1228203630]
@@ -163,14 +169,20 @@ alignment = 1
 
 [node name="GameOverLabel" type="Label" parent="CanvasLayer/GameOverPanel/VBoxContainer" unique_id=626742279]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_108xg")
+theme_override_font_sizes/font_size = 30
 text = "Jogo pausado"
 horizontal_alignment = 1
 
 [node name="BtnReturnMenu" type="Button" parent="CanvasLayer/GameOverPanel/VBoxContainer" unique_id=1662171675]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_108xg")
+theme_override_font_sizes/font_size = 30
 text = "Retornar ao Menu Principal"
 
 [node name="TopMenuButton" type="Button" parent="CanvasLayer" unique_id=1640082674]
 offset_right = 80.0
 offset_bottom = 31.0
+theme_override_fonts/font = ExtResource("2_108xg")
+theme_override_font_sizes/font_size = 23
 text = "Menu"

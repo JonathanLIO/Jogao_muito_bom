@@ -358,6 +358,27 @@ private QuestionData GenerateMathQuestion(string type, int min1, int max1, int m
         if (_questions.Count == 0)
         {
             QuestionLabel.Text = "Parabéns! Você venceu todas as perguntas!";
+            //Aqui que vem a parte de acabar
+            // A UI de Game Over é local e só aparece na tela de quem perdeu
+            if (GameOverPanel != null)
+            {
+                GD.Print(1);
+                GameOverPanel.Visible = true;
+            }
+
+            if (BtnTopMenu != null)
+            {
+                GD.Print(2);
+                BtnTopMenu.Visible = false;
+            }
+
+            if (GameOverLabel != null)
+            {
+                GD.Print(3);
+                GameOverLabel.Text = "As perguntas acabaram! Você venceu, parabens!";
+            }
+            RoundTimer.Start(1000000000000000); 
+            TimerLabel.Visible = false;
             return;
         }
 

@@ -229,6 +229,11 @@ public partial class MainMenu : Control
 
                 // CORREÇÃO: Guarda o caminho real nos Metadados do nó
                 checkBox.SetMeta("full_path", fullPath);
+                
+                FontFile minhaFonte = GD.Load<FontFile>("res://Fonts/pixel_operator/PixelOperatorSC-Bold.ttf");
+                
+                checkBox.AddThemeFontOverride("font", minhaFonte);
+                checkBox.AddThemeFontSizeOverride("font_size", 24);
 
                 Button deleteButton = new Button
                 {

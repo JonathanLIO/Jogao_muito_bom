@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://1gbecxf8oqcw"]
 
 [ext_resource type="Script" uid="uid://c2kx7vyxe70ym" path="res://MainMenu.cs" id="1_06t4h"]
+[ext_resource type="FontFile" uid="uid://cymhq3yoj7mw0" path="res://Fonts/pixel_operator/PixelOperatorSC-Bold.ttf" id="2_7vrkn"]
 
 [node name="MainMenu" type="Control" unique_id=669608869 node_paths=PackedStringArray("CheckSyllables", "CheckConsonants", "CheckVowels", "CheckAddition", "CheckSubtraction", "CheckMultiplication", "CheckDivision", "BtnCreateQuestion", "BtnImportQuestion", "BtnPlaySolo", "BtnCreateRoom", "BtnJoinRoom", "CustomFilesContainer", "labelImport", "IpInput", "BtnHost", "BtnJoin", "labelErro", "ImportFileDialog")]
 layout_mode = 3
@@ -46,7 +47,8 @@ offset_bottom = 649.0
 
 [node name="Title" type="Label" parent="MainLayout" unique_id=1570746899]
 layout_mode = 2
-theme_override_font_sizes/font_size = 31
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 35
 text = "Menu do Quiz"
 horizontal_alignment = 1
 
@@ -63,18 +65,26 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="MainLayout/ContentContainer/QuizSelection/PortuguesSection" unique_id=1019957106]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 23
 text = "Português"
 
 [node name="CheckSyllables" type="CheckBox" parent="MainLayout/ContentContainer/QuizSelection/PortuguesSection" unique_id=704900552]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 20
 text = "Quantidade de Sílabas"
 
 [node name="CheckVowels" type="CheckBox" parent="MainLayout/ContentContainer/QuizSelection/PortuguesSection" unique_id=1412860619]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 20
 text = "Quantidade de Vogal"
 
 [node name="CheckConsonants" type="CheckBox" parent="MainLayout/ContentContainer/QuizSelection/PortuguesSection" unique_id=1977092890]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 20
 text = "Quantidade de Consoante"
 
 [node name="MatematicaSection" type="VBoxContainer" parent="MainLayout/ContentContainer/QuizSelection" unique_id=1058233374]
@@ -82,24 +92,33 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="MainLayout/ContentContainer/QuizSelection/MatematicaSection" unique_id=2143199088]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 23
 text = "
-
 Matemática"
 
 [node name="CheckAddition" type="CheckBox" parent="MainLayout/ContentContainer/QuizSelection/MatematicaSection" unique_id=1014573224]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 20
 text = "Soma"
 
 [node name="CheckSubtraction" type="CheckBox" parent="MainLayout/ContentContainer/QuizSelection/MatematicaSection" unique_id=1233521710]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 20
 text = "Subtração"
 
 [node name="CheckMultiplication" type="CheckBox" parent="MainLayout/ContentContainer/QuizSelection/MatematicaSection" unique_id=1563579164]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 20
 text = "Multiplicação"
 
 [node name="CheckDivision" type="CheckBox" parent="MainLayout/ContentContainer/QuizSelection/MatematicaSection" unique_id=1667813679]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 20
 text = "Divisão"
 
 [node name="CustomSection" type="VBoxContainer" parent="MainLayout/ContentContainer/QuizSelection" unique_id=887587845]
@@ -107,6 +126,8 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="MainLayout/ContentContainer/QuizSelection/CustomSection" unique_id=1170447070]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 28
 text = "Customizado"
 
 [node name="BtnCreateQuestion" type="Button" parent="MainLayout/ContentContainer/QuizSelection/CustomSection" unique_id=1011718043]
@@ -116,10 +137,14 @@ text = "Criar questões"
 
 [node name="BtnImportQuestion" type="Button" parent="MainLayout/ContentContainer/QuizSelection/CustomSection" unique_id=1801067725]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 24
 text = "Importar questões"
 
 [node name="rtnImportLabel" type="Label" parent="MainLayout/ContentContainer/QuizSelection/CustomSection" unique_id=295005820]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 23
 autowrap_mode = 3
 
 [node name="CustomFilesContainer" type="VBoxContainer" parent="MainLayout/ContentContainer/QuizSelection/CustomSection" unique_id=148650854]
@@ -132,26 +157,35 @@ size_flags_horizontal = 3
 
 [node name="Label" type="Label" parent="MainLayout/ContentContainer/NetworkSection" unique_id=974072925]
 layout_mode = 2
-text = "
-Modo de Jogo
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 23
+text = "Modo de Jogo
 "
 
 [node name="BtnPlaySolo" type="Button" parent="MainLayout/ContentContainer/NetworkSection" unique_id=642414501]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 23
 text = "Jogar solo"
 
 [node name="BtnCreateRoom" type="Button" parent="MainLayout/ContentContainer/NetworkSection" unique_id=1443873313]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 23
 disabled = true
 text = "Criar sala"
 
 [node name="BtnJoinRoom" type="Button" parent="MainLayout/ContentContainer/NetworkSection" unique_id=660532615]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 23
 disabled = true
 text = "Entrar em sala"
 
 [node name="msgLabel" type="Label" parent="MainLayout/ContentContainer/NetworkSection" unique_id=1220052891]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 23
 autowrap_mode = 3
 
 [node name="ipInput" type="LineEdit" parent="MainLayout/ContentContainer/NetworkSection" unique_id=1038748833]
@@ -159,6 +193,7 @@ visible = false
 layout_mode = 2
 
 [node name="FileDialog" type="FileDialog" parent="." unique_id=1018568263]
+oversampling_override = 1.0
 title = "Open a File"
 file_mode = 0
 access = 2
